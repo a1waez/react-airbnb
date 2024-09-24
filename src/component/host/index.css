@@ -1,0 +1,40 @@
+.host {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.host__text {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+}
+
+.host__sub-block {
+    display: grid;
+    gap: 20px;
+}
+
+.host__info {
+    display: flex;
+    gap: 12px;
+}
+
+.host__sub-value {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+}
+
+.host__sub-value:not(:last-child)::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 4px;
+    border-radius: 4px;
+    background-color: #000;
+}
+
+.host__image {
+    border-radius: 50px;
+}
